@@ -1,0 +1,270 @@
+html{
+  font-size: 16px;
+  background-color: white;
+
+}
+
+body{
+  line-height: 1.4rem;
+  font-family: "Open Sans";
+}
+
+html, body{
+  width:100%;
+  height: 100%;
+
+}
+
+html{
+  box-sizing: border-box;
+}
+
+
+ /* Heather */
+
+header{
+  position: relative;
+  width: 100%;
+  background-color: #dddcdc;
+  background-size: cover;
+}
+
+header nav{
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans";
+  font-size: 16px;
+  position:relative;
+  height: 64px;
+}
+
+nav div {
+
+    display: flex;
+    align-items: center;
+
+}
+
+header nav  div img {
+    height: 40px;
+    margin-left: 24px;
+    transition-delay: .2s;
+    transition-duration: .7s;
+    transition-property: all;
+
+}
+
+header nav div img:hover{
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition-delay: .2s;
+    transition-duration: .7s;
+    transition-property: all;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+
+}
+
+header .desktop ul li a{
+  transition-delay:.1s;
+  transition-duration:.2s;
+  }
+
+header .desktop ul li a:hover{
+  padding: 10px 5px;
+  border: 2px solid #5c5c5c;
+  transition-delay:.1s;
+  transition-duration:.2s;
+
+}
+
+header .container div a{
+  transition-delay: .2s;
+  transition-duration: .7s;
+  transition-property: all;
+  }
+header .container div a:hover{
+  transform: rotateX(360deg);
+  transition-delay: .2s;
+  transition-duration: .7s;
+  transition-property: all;
+}
+
+ul li {
+    display: inline;
+    margin-right: 24px;
+    list-style-type: none;
+}
+
+li {
+    display: list-item;
+    text-align: right;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+
+}
+
+ .strong{
+  color:#5c5c5c ;
+  font-weight: bold;
+}
+
+
+ .grey{
+  color: #5c5c5c;
+}
+
+ header .mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  header div {
+    display: none;
+  }
+
+  header .mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  }
+}
+
+
+.registration{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url(../capstone_colmar_assets/images/banner.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registration h1{
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight:600;
+  color:#f0f0f0;
+  margin-left: 20px;
+  margin-top: 60px;
+  flex-basis: 100%;
+  letter-spacing: 10px;
+}
+
+.form-register{
+
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 7px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Open Sans";
+}
+
+.form_title{
+  color: #f0f0f0;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+
+}
+
+.container-inputs{
+  margin-left: 33%;
+  padding-bottom: 20px;
+}
+.container-inputs input{
+  margin-bottom: 20px;
+  }
+
+  .container-inputs .form_link{
+  margin-right: 33%;
+  line-height: 1.5rem;
+  font-size: 14px;
+  color: #f0f0f0;
+  }
+.container-inputs .form_link a{
+  color: #f0f0f0;
+  text-decoration: underline;
+  }
+  /*Footer*/
+
+  footer {
+    background-color:#ecf0f1;
+  }
+
+  footer .content {
+    color: #5c5c5c;
+    display: flex;
+    font-size: 14px;
+    font-family: "Open Sans";
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 40px;
+    padding-right: 16px;
+    border-top: 0.5px solid #dddcdc;
+  }
+
+  footer .copyright {
+    flex-grow: 1;
+  }
+  footer-mobile .content{
+    display: none;
+    }
+
+  @media only screen and (max-width: 480px){
+  footer .content{
+    display: none;
+  }
+  footer-mobile .content{
+    display: flex;
+    background-color:#ecf0f1;
+    }
+    footer-mobile {
+      background-color:#ecf0f1;
+    }
+
+    footer-mobile .content {
+      color: #5c5c5c;
+      display: flex;
+      font-size: 14px;
+      font-family: "Open Sans";
+      padding-top: 16px;
+      padding-left: 24px;
+      padding-bottom: 16px;
+      padding-right: 16px;
+      border-top: 0.5px solid #dddcdc;
+    }
+
+    footer-mobile .copyright {
+      flex-grow: 1;
+    }
+  }
